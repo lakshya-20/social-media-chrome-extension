@@ -25,6 +25,7 @@
             min-height: 180px;
             padding: 0;
             width: 384px;
+            
         }
 
         h1 {
@@ -45,16 +46,30 @@
         img {
             width: 30px;
         }
-
         .modal-header {
+            margin:10px;
             align-items: center;
             border-bottom: 0.5px solid #dadada;
+            background-color: #f0f5f5;
+            border-radius: 10px;
         }
 
         .modal-content {
-            padding: 0 22px;
+            width: 100%;
         }
-
+        h2 {
+            font-family: "Menlo", monospace;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            margin-left: 22px;
+            color: #2f5876;
+        }
+        .modal-content p{
+            /* margin-left: auto;
+            margin-right: auto; */
+            text-align: center;
+        }
         .modal-icons {
             border-top: 0.5px solid #dadada;
             height: 50px;
@@ -70,9 +85,11 @@
             margin-right: 12px;
         }
         .flex-container {
+            margin:10px;
+            width: 100%;
             display: flex;
-            justify-content: space-between;
-            padding: 10px 22px;
+            justify-content: center;
+            padding: 10px 22px; 
         }
 
         .flex {
@@ -87,7 +104,7 @@
 
         .flex .fa {
             font-size: 40px;
-            color: #2f5876;
+            color: #000000;
         }
     </style>
 
@@ -101,8 +118,9 @@
             Social Media Launcher
         </h1>
     </div>
-    <div class="modla-content">
-        <p>Easily access social media profiles</p>
+    <div class="modal-content">
+        <h2>Hello Lakshya!</h2>
+        <p>All your profiles are just one click away!</p>
     </div>
     <div class="modal-icons">
         <div class="flex-container">
