@@ -66,9 +66,8 @@ h2 {
 }
 .flex-container {
     margin:10px;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px 22px; 
 }
 
