@@ -66,15 +66,23 @@ h2 {
 }
 .flex-container {
     margin:10px;
-    display: flex;
     justify-content: space-between;
     padding: 10px 22px; 
+    position: relative;
 }
 
 .flex {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-    width: 120px;
+    width: 100%;
+}
+.ball{
+    float: right;
+    margin-right: 10px;
+    display: inline;
+}   
+.ball input{
+    width: 250px;
 }
 
 .flex:hover {
@@ -86,6 +94,12 @@ h2 {
     color: #000000;
 }
 
-.edit-btn{
+.save-btn{
+    background-color: #f0f5f5;
+    margin-left: 130px;
+    border-style: none;
+    display: inline;
+}
+.back-btn{
     float: right;
 }
