@@ -3,12 +3,7 @@ var launch_all=document.getElementById('launch-all');
 launch_all.addEventListener('click',function(){
     UpdateLinks();
 });
-var urls=[
-"https://lakshyabansal.000webhostapp.com/",
-"https://github.com/prog-hammer/",
-"https://www.linkedin.com/in/proghammer/",
-"https://twitter.com/lakshya__bansal"
-]
+var urls=[]
 function UpdateLinks(){
     for(var i in urls){
         window.open(urls[i]);
@@ -32,6 +27,7 @@ chrome.storage.sync.get(keys,function(links){
         }
         if(links.website){
             website.href=links.website;
+            urls.push(links.website)
         }
         else{
             website.addEventListener('click',function(event){
@@ -40,6 +36,7 @@ chrome.storage.sync.get(keys,function(links){
         }
         if(links.github){
             github.href=links.github;
+            urls.push(links.github)
         }
         else{
             github.addEventListener('click',function(event){
@@ -48,6 +45,7 @@ chrome.storage.sync.get(keys,function(links){
         }
         if(links.linkedin){
             linkedin.href=links.linkedin;
+            urls.push(links.linkedin)
         }
         else{
             linkedin.addEventListener('click',function(event){
@@ -56,6 +54,7 @@ chrome.storage.sync.get(keys,function(links){
         }
         if(links.twitter){
             twitter.href=links.twitter;
+            urls.push(links.twitter)
         }
         else{
             twitter.addEventListener('click',function(event){
@@ -64,6 +63,7 @@ chrome.storage.sync.get(keys,function(links){
         }
         if(links.facebook){
             facebook.href=links.facebook;
+            urls.push(links.facebook)
         }
         else{
             facebook.addEventListener('click',function(event){
