@@ -8,7 +8,7 @@ var save=document.getElementById('save')
 
 var keys=["name","website","github","linkedin","twitter","facebook"];
 
-chrome.storage.local.get(keys,function(links){
+chrome.storage.sync.get(keys,function(links){
     if(!chrome.runtime.error){
         if(links.name){
             name_field.innerHTML=links.name;
@@ -32,7 +32,6 @@ chrome.storage.local.get(keys,function(links){
 });
 save.addEventListener('click',function(){
     updateLinks();
-    console.log("hk")
 });
 
 function updateLinks(){
@@ -45,7 +44,7 @@ function updateLinks(){
         "facebook":facebook.value
     }
     console.log("values",values)
-    chrome.storage.local.set(values,function(){
+    chrome.storage.sync.set(values,function(){
         if(!chrome.runtime.error){
             window.location.pathname='popup.html'
         }

@@ -25,7 +25,7 @@ var edit_btn=document.getElementById('edit')
 
 var keys=["name","website","github","linkedin","twitter","facebook"];
 
-chrome.storage.local.get(keys,function(links){
+chrome.storage.sync.get(keys,function(links){
     if(!chrome.runtime.error){
         if(links.name){
             name_field.innerHTML=links.name;
