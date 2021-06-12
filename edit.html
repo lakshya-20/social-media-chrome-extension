@@ -20,66 +20,71 @@
       href="/edit.css"
       rel="stylesheet"
     />
-
-    
-
-
 </head>
 
 <body>
-    <div class="modal-header">
-        <h1 class="logo">
-            <img src="images/logo.png" alt="Social Media Launcher" class="logo-icon">
-            Social Media Launcher
-        </h1>
-    </div>
-    <div class="modal-content">
-        <h2>Hello Lakshya!</h2>
-        <p>All your profiles are just one click away!</p>
-    </div>
-    <div class="modal-icons">
-        <div class="flex-container">
-            <div class="flex">
-                <i class="fa fa-child"></i>
+    <div class="wrapper">
+        <div class="top_wrapper">
+            <!-- <img src="images/logo.png" alt="Social Media Launcher" class="logo"> -->
+            <span class="title_wrapper">
+                <span class="title">    
+                    Social Media Launcher
+                </span>
+                <p class="sub_title">All your profiles are just one click away!</p>
+            </span>
+        </div>
+        <div class="middle_wrapper">
+            <span class="name">
+                Hello! <span id="name"></span>
+            </span>
+            <a class="edit-btn" role="button" href="edit.html" id="edit">
+                <i class="fa fa-edit"></i>
+            </a>
+        </div>
+        <div class="modal-icons">
+            <div class="edit_field_wrapper">
+                <i class="fa fa-child fa-2x"></i>
                 <div class="ball">
-                    <input class="form-input" id="name" type="text" placeholder="Name">
+                    <input class="edit_field" id="name_field" type="text" placeholder="Name">
                 </div>
             </div>
-            <div class="flex">
-                <i class="fa fa-globe"></i>
+            <div class="edit_field_wrapper">
+                <i class="fa fa-globe fa-2x"></i>
                 <div class="ball">
-                    <input class="form-input" id="website" type="text" placeholder="url">
+                    <input class="edit_field" id="website" type="text" placeholder="url">
                 </div>
             </div>
-            <div class="flex">
-                <i class="fa fa-github"></i>
+            <div class="edit_field_wrapper">
+                <i class="fa fa-github fa-2x"></i>
                 <div class="ball">
-                    <input class="form-input" id="github" type="text" placeholder="url">
+                    <input class="edit_field" id="github" type="text" placeholder="url">
                 </div>
             </div>
-            <div class="flex">
-                <i class="fa fa-linkedin"></i>
+            <div class="edit_field_wrapper">
+                <i class="fa fa-linkedin fa-2x"></i>
                 <div class="ball">
-                    <input class="form-input" id="linkedin" type="text" placeholder="url">
+                    <input class="edit_field" id="linkedin" type="text" placeholder="url">
                 </div>
             </div>
-            <div class="flex">
-                <i class="fa fa-twitter"></i>
+            <div class="edit_field_wrapper">
+                <i class="fa fa-twitter fa-2x"></i>
                 <div class="ball">
-                    <input class="form-input" id="twitter" type="text" placeholder="url">
+                    <input class="edit_field" id="twitter" type="text" placeholder="url">
                 </div>
             </div>
-            <div class="flex">
-                <i class="fa fa-facebook"></i>
+            <div class="edit_field_wrapper">
+                <i class="fa fa-instagram fa-2x"></i>
                 <div class="ball">
-                    <input class="form-input" id="facebook" type="text" placeholder="url">
+                    <input class="edit_field" id="instagram" type="text" placeholder="url">
                 </div>
             </div>
-            <div class="flex">
-                <button class="save-btn" id="save">Save</button>
+        </div>
+        <div class="footer_wrapper">
+            <div class="">
+                <a class="footer_btn" role="button" id="save">Save</a>
             </div>
-            <div class="flex">
-                <a class="back-btn" role="button" href="popup.html">Back</a>
+            <div class="">
+                <a class="footer_btn" role="button" href="popup.html">Back</a>
             </div>
         </div>
     </div>

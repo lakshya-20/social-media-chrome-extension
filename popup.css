@@ -1,91 +1,70 @@
-html,body {
+body {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     margin: 0;
-    min-height: 180px;
     padding: 0;
-    width: 384px;
-    
+    width: 400px; 
 }
-
-h1 {
-    font-family: "Menlo", monospace;
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
-    color: #2f5876;
+.wrapper {
+    padding: 10px 15px;
+    background-color: black;
 }
-
-a:link,
-a:visited {
-    color: #000000;
-    outline: 0;
-    text-decoration: none;
-}
-
-img {
-    width: 30px;
-}
-.modal-header {
-    margin:10px;
+.top_wrapper {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: 0.5px solid #dadada;
-    background-color: #f0f5f5;
-    border-radius: 10px;
+    background-color: #404040;
 }
-
-.modal-content {
-    width: 100%;
+.logo {
+    width: 40px;
+    height: 40px;
 }
-h2 {
-    font-family: "Menlo", monospace;
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 22px;
-    color: #2f5876;
-}
-.modal-content p{
-    /* margin-left: auto;
-    margin-right: auto; */
+.title_wrapper {
     text-align: center;
 }
-.modal-icons {
-    border-top: 0.5px solid #dadada;
-    height: 50px;
-    width: 100%;
+.title {
+    font-family: "Menlo", monospace;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0;
+    color: white;
 }
-
-.logo {
-    padding: 16px;
+.sub_title {
+    color: #bfbfbf;
 }
-
-.logo-icon {
-    vertical-align: text-bottom;
-    margin-right: 12px;
+.middle_wrapper {
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
 }
-.flex-container {
+.toggle_container {
     margin:10px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 22px; 
+    padding: 10px 20px;
 }
-
-.flex {
+.toggle_wrapper {
+    text-align: center;
+}
+.toggle_btn {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-    width: 120px;
+    color: #999999;
+    cursor: pointer;
 }
-
-.flex:hover {
+.toggle_btn:hover {
     opacity: 0.4;
 }
-
-.flex .fa {
-    font-size: 40px;
-    color: #000000;
+.toggle_rocket {
+    color: #999999;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
 }
-
-.edit-btn{
-    float: right;
+.toggle_rocket:hover {
+    color: #999999;
+    opacity: 0.4;
 }

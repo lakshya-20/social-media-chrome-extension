@@ -1,105 +1,65 @@
-html,body {
+body {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     margin: 0;
-    min-height: 180px;
     padding: 0;
-    width: 384px;
-    
+    width: 400px; 
 }
-
-h1 {
-    font-family: "Menlo", monospace;
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
-    color: #2f5876;
+.wrapper {
+    padding: 10px 15px;
+    background-color: black;
 }
-
-a:link,
-a:visited {
-    color: #000000;
-    outline: 0;
-    text-decoration: none;
-}
-
-img {
-    width: 30px;
-}
-.modal-header {
-    margin:10px;
+.top_wrapper {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: 0.5px solid #dadada;
-    background-color: #f0f5f5;
-    border-radius: 10px;
+    background-color: #404040;
 }
-
-.modal-content {
-    width: 100%;
+.logo {
+    width: 40px;
+    height: 40px;
 }
-h2 {
-    font-family: "Menlo", monospace;
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 22px;
-    color: #2f5876;
-}
-.modal-content p{
-    /* margin-left: auto;
-    margin-right: auto; */
+.title_wrapper {
     text-align: center;
 }
-.modal-icons {
-    border-top: 0.5px solid #dadada;
-    height: 50px;
-    width: 100%;
+.title {
+    font-family: "Menlo", monospace;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0;
+    color: white;
 }
-
-.logo {
-    padding: 16px;
+.sub_title {
+    color: #bfbfbf;
 }
-
-.logo-icon {
-    vertical-align: text-bottom;
-    margin-right: 12px;
-}
-.flex-container {
-    margin:10px;
+.middle_wrapper {
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 0px;
+    display: flex;
     justify-content: space-between;
-    padding: 10px 22px; 
-    position: relative;
 }
-
-.flex {
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-    width: 100%;
+.edit_field_wrapper {
+    display: flex;
+    justify-content: space-around;
+    color: red;
+    padding-bottom: 10px;
 }
-.ball{
-    float: right;
-    margin-right: 10px;
-    display: inline;
-}   
-.ball input{
-    width: 250px;
+.edit_field {
+    width: 300px;
+    background-color: #e6e6e6;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
-
-.flex:hover {
-    opacity: 0.4;
+.footer_wrapper {
+    display: flex;
+    justify-content: space-evenly;
 }
-
-.flex .fa {
-    font-size: 40px;
-    color: #000000;
-}
-
-.save-btn{
-    background-color: #f0f5f5;
-    margin-left: 130px;
-    border-style: none;
-    display: inline;
-}
-.back-btn{
-    float: right;
+.footer_btn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }

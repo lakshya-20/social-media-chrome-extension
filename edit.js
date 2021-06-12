@@ -1,17 +1,19 @@
-var name_field=document.getElementById('name')
+var name_display=document.getElementById('name')
+var name_field=document.getElementById('name_field')
 var website=document.getElementById('website')
 var github=document.getElementById('github')
 var linkedin=document.getElementById('linkedin')
 var twitter=document.getElementById('twitter')
-var facebook=document.getElementById('facebook')
+var instagram=document.getElementById('instagram')
 var save=document.getElementById('save')
 
-var keys=["name","website","github","linkedin","twitter","facebook"];
+var keys=["name","website","github","linkedin","twitter","instagram"];
 
 chrome.storage.sync.get(keys,function(links){
     if(!chrome.runtime.error){
         if(links.name){
-            name_field.innerHTML=links.name;
+            name_display.innerHTML = links.name;
+            name_field.value=links.name;
         }
         if(links.website){
             website.value=links.website;
@@ -25,8 +27,8 @@ chrome.storage.sync.get(keys,function(links){
         if(links.twitter){
             twitter.value=links.twitter;
         }
-        if(links.facebook){
-            facebook.value=links.facebook;
+        if(links.instagram){
+            instagram.value=links.instagram;
         }
     }
 });
@@ -41,9 +43,8 @@ function updateLinks(){
         "github":github.value,
         "linkedin":linkedin.value,
         "twitter":twitter.value,
-        "facebook":facebook.value
+        "instagram":instagram.value
     }
-    console.log("values",values)
     chrome.storage.sync.set(values,function(){
         if(!chrome.runtime.error){
             window.location.pathname='popup.html'
